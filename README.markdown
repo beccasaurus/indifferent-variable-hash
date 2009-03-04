@@ -4,7 +4,7 @@ Indifferent Variable Hash
 This tiny library / gem could likely use a new name as "Indifferent Hash" 
 can mean a number of things.
 
-Here's what this let's you do:
+Here's what this lets you do:
 
     $ sudo gem install remi-indifferent-variable-hash -s http://gems.github.com
     $ irb
