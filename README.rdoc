@@ -65,9 +65,9 @@ Here's what this lets you do:
 Why not!
 
 I often add functionality similar to this to some classes that hold config-like information, for example:
- * MyApp.config might return an object that includes IndifferentVariableHash so I can say <tt>MyApp.config.foo = 'bar'</tt> or <tt>MyApp.config[:foo] = 'bar'</tt>
- * Alternatively, I might like the syntax <tt>MyApp.foo = 'bar'</tt> or <tt>MyApp[:foo] = 'bar'</tt> so I should extend MyApp with IndifferentVariableHash
- * _OR_ I might want both syntaxes, so I extend MyApp with IndifferentVariableHash but I also alias 'config' to 'variables.'
+- MyApp.config might return an object that includes IndifferentVariableHash so I can say <tt>MyApp.config.foo = 'bar'</tt> or <tt>MyApp.config[:foo] = 'bar'</tt>
+- Alternatively, I might like the syntax <tt>MyApp.foo = 'bar'</tt> or <tt>MyApp[:foo] = 'bar'</tt> so I should extend MyApp with IndifferentVariableHash
+- _OR_ I might want both syntaxes, so I extend MyApp with IndifferentVariableHash but I also alias 'config' to 'variables.'
 
 I use this often enough that I figured I should gem-ify it so I can easily use it in some of my projects, when I want it.
 
