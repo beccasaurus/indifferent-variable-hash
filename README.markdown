@@ -1,9 +1,11 @@
-= Indifferent Variable Hash
+Indifferent Variable Hash
+=========================
 
 NOTE: This tiny library / gem could likely use a new name as "Indifferent Hash" 
 can mean a number of things ... oh well!  See usage below for what this really does.
 
-== Usage
+Usage
+-----
 
 Here's what this lets you do:
 
@@ -60,14 +62,16 @@ Here's what this lets you do:
     >> rover.variables
     => {"foo"=>"bar"}
 
-== ... why?
+... why?
+--------
 
 Why not!
 
 I often add functionality similar to this to some classes that hold config-like information, for example:
-- MyApp.config might return an object that includes IndifferentVariableHash so I can say <tt>MyApp.config.foo = 'bar'</tt> or <tt>MyApp.config[:foo] = 'bar'</tt>
-- Alternatively, I might like the syntax <tt>MyApp.foo = 'bar'</tt> or <tt>MyApp[:foo] = 'bar'</tt> so I should extend MyApp with IndifferentVariableHash
-- _OR_ I might want both syntaxes, so I extend MyApp with IndifferentVariableHash but I also alias 'config' to 'variables.'
+
+ * MyApp.config might return an object that includes IndifferentVariableHash so I can say `MyApp.config.foo = 'bar'` or `MyApp.config[:foo] = 'bar'`
+ * Alternatively, I might like the syntax `MyApp.foo = 'bar'` or `MyApp[:foo] = 'bar'` so I should extend MyApp with IndifferentVariableHash
+ * _OR_ I might want both syntaxes, so I extend MyApp with IndifferentVariableHash but I also alias 'config' to 'variables.'
 
 I use this often enough that I figured I should gem-ify it so I can easily use it in some of my projects, when I want it.
 
